@@ -1,0 +1,29 @@
+﻿<Window x:Class="AviaCompany.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AviaCompany"
+        mc:Ignorable="d"
+        Title="Login" Height="413" Width="727" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Vertical">
+            <Image Margin="0 0 0 30" Source="/Resources/Images/DS2017_TP09_color.png" Stretch="None"></Image>
+            <StackPanel >
+                <StackPanel Margin="0 0 30 10" Orientation="Horizontal" HorizontalAlignment="Right">
+                    <TextBlock  Foreground="Black" FontSize="18" Margin="0 0 5 0" >Username:</TextBlock>
+                    <TextBox FontSize="16"  TextAlignment="Left" Name="TbLogin" Width="240" Height="24" ></TextBox>
+                </StackPanel>
+                <StackPanel Margin="0 0 30 25" Orientation="Horizontal" HorizontalAlignment="Right">
+                    <TextBlock  Foreground="Black" Margin="0 0 5 0" FontSize="18" >Password:</TextBlock>
+                    <PasswordBox FontSize="18"  PasswordChar="*" Name="TbPass" Width="240"  Height="24"></PasswordBox>
+                </StackPanel>
+                <StackPanel Orientation="Horizontal" Margin="0 0 0 0"  HorizontalAlignment="Center">
+                    <Button Width="120" Height="30" Name="btnLogin" Margin="0 0 20 0" Click="btnLogin_Click"  >Login</Button>
+                    <Button Width="120" Height="30" Name="btnExit" Click="btnExit_Click"  >Exit</Button>
+                </StackPanel>
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</Window>
